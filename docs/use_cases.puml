@@ -1,0 +1,19 @@
+@startuml use_cases
+left to right direction
+
+actor User
+
+rectangle "Task Management" {
+  usecase "Assign Task" as UC001
+  usecase "Create Task" as UC002
+  usecase "Update Task Detail" as UC003
+  usecase "Delete Task" as UC004
+  usecase "View Task History" as UC005
+}
+
+User --> UC001
+User --> UC002
+User --> UC003
+User --> UC004
+User --> UC005
+@enduml
